@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Brain Rot Guard",
+    "version": "1.0",
+    "description": "A simple browser extension to protect you from brain rot.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.facebook.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "48": "icon.png"
+    }
+  }
+  
